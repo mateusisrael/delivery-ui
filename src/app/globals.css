@@ -26,6 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+* {
+  min-width: auto;
+  box-sizing: border-box;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
