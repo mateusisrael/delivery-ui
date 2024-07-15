@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import local from "next/font/local";
 
-const sf = local({ src: '../fonts/SF-Pro-Rounded-Bold.otf' })
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sf.className} 'max-w-96' text-7xl font-extrabold`}>{children}</body>
+      <body className={`text-7xl font-extrabold`}>{children}</body>
     </html>
   );
 }

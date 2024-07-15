@@ -16,7 +16,9 @@ const config: Config = {
     },
     colors: {
       primary: '#FF4B3A',
-      white: '#ffffff'
+      white: '#ffffff',
+      black: '#000000',
+      inputBG: "#EFEEEE"
     }
   },
   plugins: [],

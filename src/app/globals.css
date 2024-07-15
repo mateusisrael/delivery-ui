@@ -27,7 +27,7 @@ body {
 }
 
 * {
-  min-width: auto;
+  min-width: 0;
   box-sizing: border-box;
 }
 
