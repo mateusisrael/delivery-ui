@@ -18,7 +18,8 @@ const config: Config = {
       primary: '#FF4B3A',
       white: '#ffffff',
       black: '#000000',
-      inputBG: "#EFEEEE"
+      inputBG: "#EFEEEE",
+      silver: "#ADADAF"
     }
   },
   plugins: [],

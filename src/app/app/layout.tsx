@@ -1,3 +1,4 @@
+import { BottomNavBar } from "@/components/bottom-nav-bar"
 import { Menu, ShoppingCart } from "lucide-react"
 import Link from "next/link"
 
@@ -23,9 +24,7 @@ export default function LayoutApp(
         {children}
       </div>
 
-      <nav>
-
-      </nav>
+      <BottomNavBar />
     </div>
   )
 }
