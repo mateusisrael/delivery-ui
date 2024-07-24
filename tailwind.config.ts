@@ -15,11 +15,13 @@ const config: Config = {
       },
     },
     colors: {
-      primary: '#FF4B3A',
+      primary: '#FA4A0C',
+      neutralBackground: "#F2F2F2",
       white: '#ffffff',
       black: '#000000',
       inputBG: "#EFEEEE",
-      silver: "#ADADAF"
+      silver: "#ADADAF",
+      listText: "#9A9A9D"
     }
   },
   plugins: [],

@@ -9,7 +9,7 @@ export const BottomNavBar = () => {
   const pathname = usePathname()  
 
   const getIconColor = (path: string) => {
-    if(pathname === path) return "#FF4B3A"
+    if(pathname === path) return "#FA4A0C"
     return "#ADADAF"
   }
 

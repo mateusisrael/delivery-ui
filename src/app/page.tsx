@@ -15,7 +15,7 @@ export default function Home() {
           </div>
           
           <h1>Food For<br/> Everyone</h1>
-        </div>      
+        </div>
 
         <div className="flex justify-center w-full bottom-9">
           <Link href={'/app'}>
@@ -23,7 +23,6 @@ export default function Home() {
               <span>Get Started</span>
             </button>
           </Link>
-
         </div>
       </div>
     </main>
