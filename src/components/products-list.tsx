@@ -5,6 +5,7 @@ import { SearchInput } from "./search-input"
 import clsx from "clsx"
 import { Product } from "@/@types/product"
 import Image from "next/image"
+import Link from "next/link"
 
 
 type ProductListProps = {
@@ -63,7 +64,9 @@ export const List = ({ products }: ProductListProps) => {
         {
           products.map((product, i) => {
             return (
-              <ProductCard key={i} product={product}/>
+              <Link key={i} href={`app/product/${product.id}`}>
+                <ProductCard product={product}/>
+              </Link>
             )
           })
         }

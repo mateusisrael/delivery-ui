@@ -1,6 +1,8 @@
 'use client'
+import { isHomePath } from "@/utils";
 import { Menu, ArrowLeft } from "lucide-react";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 type ButtonProps = {
   onClick: () => void
@@ -34,7 +36,6 @@ const AsideNav = ({ onClose }: AsideProps) => {
 
 const HamburguerMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
-
   return (
     <>
       <Button onClick={() => setIsOpen(prev => !prev)}/>
