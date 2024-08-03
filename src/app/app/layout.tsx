@@ -3,7 +3,7 @@
 import { BottomNavBar } from "@/components/bottom-nav-bar"
 import { ArrowLeft, ShoppingCart } from "lucide-react"
 import Link from "next/link"
-import HamburguerMenu from "@/components/aside-menu"
+import { Menu } from "@/components/aside-menu"
 import { usePathname, useRouter } from "next/navigation"
 
 
@@ -12,6 +12,7 @@ export default function LayoutApp(
 ) {
   const path = usePathname()
   const route = useRouter()
+
 
   const isProductPage = path.split('/').find(i => i === 'product' || i === 'cart')
 
@@ -26,9 +27,8 @@ export default function LayoutApp(
             <ArrowLeft color="#000" />
           </button>
         )  : (
-
         <>
-          <HamburguerMenu />
+          <Menu.Root />
 
           <Link className="flex items-center" href="/app/cart">
             <button className="p-2">
